@@ -149,18 +149,19 @@
             <div class="row provisional">
                 <div class="col-md-12 col-xs-12">
                     <h2 class="h3 full-width bg-img-hdng mrgn-tp-10">The IDEaS Team</h2>
-                    <div class="col-md-6 col-xs-12">
+                    <div class="col-md-5 col-xs-12">
                         <h2 class="h3 full-width mrgn-tp-0">Find by area:</h2>
                         <p>Select an area to learn more about the folks who know the most about it:</p>
-                        <select class="form-control">
-                            <option>Select option 1</option>
-                            <option>Select option 2</option>
-                            <option>Select option 3</option>
-                            <option>Select option 4</option>
-                            <option>Select option 5</option>
+                        <select class="form-control" id="myInput" onchange="myFunction()">
+                            <option value=" ">Select a group - View all</option>
+                            <option value="Technician">Technician</option>
+                            <option value="Doctor">Doctor</option>
+                            <option value="Finance">Finance</option>
+                            <option value="Lab">Lab</option>
                         </select>
                     </div>
-                    <div class="col-md-6 col-xs-12">
+                    <div class="col-md-2 col-xs-12">&nbsp;</div>
+                    <div class="col-md-5 col-xs-12">
                         <h2 class="h3 full-width mrgn-tp-0">Find by name:</h2>
                         <p>Enter the first or last name to filter the list of IDEaS staff.</p>
                         <form>
@@ -178,45 +179,45 @@
                     </div>
                     <div class="col-md-12 col-xs-12 mrgn-tp-lg mrgn-bttm-lg">
                         <ul id="myUL">
-                            <li><a href="#">Adele Doe</a><img src="" alt="Photo: Adele Doe" class="img-responsive img-rounded"  style="float:right; margin: 0px 10px 0px 0px;" />
+                            <li><a href="#">Adele Doe<br>Technician</a><img src="" alt="Photo: Adele Doe" class="img-responsive img-rounded"  style="float:right; margin: 0px 10px 0px 0px;" />
                                 <p class="small">(1-2 line description of role - Lorem ipsum dolor sit amet.)<br>
                                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 613-999-9999<br>
                                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:webaddress@IDEaS.gc.ca">webaddress@IDEaS.gc.ca</a></p>         
                             </li>
-                            <li><a href="#">Agnes Boe</a><img src="" alt="Photo: Agnes Boe" class="img-responsive img-rounded"  style="float:right; margin: 0px 10px 0px 0px;" />
+                            <li><a href="#">Agnes Boe<br>Doctor</a><img src="" alt="Photo: Agnes Boe" class="img-responsive img-rounded"  style="float:right; margin: 0px 10px 0px 0px;" />
                                 <p class="small">(1-2 line description of role - Lorem ipsum dolor sit amet.)<br>
                                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 613-999-9999<br>
                                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:webaddress@IDEaS.gc.ca">webaddress@IDEaS.gc.ca</a></p>
                             </li>
                             
-                            <li><a href="#">Billy Doe</a><img src="" alt="Photo: Billy Doe" class="img-responsive img-rounded"  style="float:right; margin: 0px 10px 0px 0px;" />
+                            <li><a href="#">Billy Doe<br>Technician</a><img src="" alt="Photo: Billy Doe" class="img-responsive img-rounded"  style="float:right; margin: 0px 10px 0px 0px;" />
                                 <p class="small">(1-2 line description of role - Lorem ipsum dolor sit amet.)<br>
                                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 613-999-9999<br>
                                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:webaddress@IDEaS.gc.ca">webaddress@IDEaS.gc.ca</a></p>
                             </li>
-                            <li><a href="#">Bob Boe</a><img src="" alt="Photo: Bob Boe" class="img-responsive img-rounded"  style="float:right; margin: 0px 10px 0px 0px;" />
+                            <li><a href="#">Bob Boe<br>Doctor</a><img src="" alt="Photo: Bob Boe" class="img-responsive img-rounded"  style="float:right; margin: 0px 10px 0px 0px;" />
                                 <p class="small">(1-2 line description of role - Lorem ipsum dolor sit amet.)<br>
                                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 613-999-9999<br>
                                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:webaddress@IDEaS.gc.ca">webaddress@IDEaS.gc.ca</a></p>
                             </li>
                           
-                            <li><a href="#">Calvin Doe</a><img src="" alt="Photo: Calvin Doe" class="img-responsive img-rounded"  style="float:right; margin: 0px 10px 0px 0px;" />
+                            <li><a href="#">Calvin Doe<br>Lab</a><img src="" alt="Photo: Calvin Doe" class="img-responsive img-rounded"  style="float:right; margin: 0px 10px 0px 0px;" />
                                 <p class="small">(1-2 line description of role - Lorem ipsum dolor sit amet.)<br>
                                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 613-999-9999<br>
                                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:webaddress@IDEaS.gc.ca">webaddress@IDEaS.gc.ca</a></p>
                             </li>
-                            <li><a href="#">Christina Boe</a><img src="" alt="Photo: Christina Boe" class="img-responsive img-rounded"  style="float:right; margin: 0px 10px 0px 0px;" />
+                            <li><a href="#">Christina Boe<br>Lab</a><img src="" alt="Photo: Christina Boe" class="img-responsive img-rounded"  style="float:right; margin: 0px 10px 0px 0px;" />
                                 <p class="small">(1-2 line description of role - Lorem ipsum dolor sit amet.)<br>
                                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 613-999-9999<br>
                                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:webaddress@IDEaS.gc.ca">webaddress@IDEaS.gc.ca</a></p>
                             </li>
-                            <li><a href="#">Cindy Foe</a><img src="" alt="Photo: Cindy Foe" class="img-responsive img-rounded"  style="float:right; margin: 0px 10px 0px 0px;" />
+                            <li><a href="#">Cindy Foe<br>Finance</a><img src="" alt="Photo: Cindy Foe" class="img-responsive img-rounded"  style="float:right; margin: 0px 10px 0px 0px;" />
                                 <p class="small">(1-2 line description of role - Lorem ipsum dolor sit amet.)<br>
                                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 613-999-9999<br>
                                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:webaddress@IDEaS.gc.ca">webaddress@IDEaS.gc.ca</a></p>
                             </li>
 
-                            <li><a href="#">GinGy Goe</a><img src="" alt="Photo: GinGy Goe" class="img-responsive img-rounded"  style="float:right; margin: 0px 10px 0px 0px;" />
+                            <li><a href="#">GinGy Goe<br>Finance</a><img src="" alt="Photo: GinGy Goe" class="img-responsive img-rounded"  style="float:right; margin: 0px 10px 0px 0px;" />
                                 <p class="small">(1-2 line description of role - Lorem ipsum dolor sit amet.)<br>
                                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 613-999-9999<br>
                                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:webaddress@IDEaS.gc.ca">webaddress@IDEaS.gc.ca</a></p>
