@@ -90,9 +90,9 @@
                     <div id="search-wrapper" class="form-group mrgn-tp-sm mrgn-bttm-sm mrgn-rght-0">
 
 
-                        <form action="#" id="cse-search-box-2" name="cse-search-box-2" method="get" role="form">
+                        <form action="#" id="cse-search-box-2" name="cse-search-box-2" method="get">
                             <input name="_charset_" value="UTF-8" type="hidden" />
-
+                            <h2 class="wb-inv"></h2>
                             <div class="input-group">
                                 <p id="search-label" class="wb-inv">Search</p>
                                 <input id="dnd-search" aria-labelledby="search-label" name="anyq" value="" type="search" class="form-control full-width" placeholder="Search" data-fusion-query="safe" spellcheck="false" autocomplete="false" dir="ltr" />
@@ -114,9 +114,9 @@
             <p>{Introduction - Donec condimentum non urna varius aliquet. Nullam quis vestibulum purus. Vestibulum a sapien rutrum, tristique lectus et, congue nisl. Donec a interdum dui. Praesent vel ipsum sagittis, placerat massa a, viverra augue. Integer fringilla quam at turpis eleifend, vel dignissim odio molestie.</p>
 
             <h2 class="wb-inv">Filter by</h2>
-            <div id="filters">
+            <div id="cn-filters">
                 <h3>Theme:
-                    <p class="more-info"><a href="#">Learn more about our themes <i class="fas fa-arrow-alt-circle-right mrgn-all-xs"></i></a></p>
+                    <span class="more-info"><a href="#">Learn more about our themes <i class="fas fa-arrow-alt-circle-right mrgn-all-xs"></i></a></span>
                 </h3>
 
                 <ul>
@@ -126,28 +126,32 @@
                     <li><a href="#" id="theme-environment" class="btn btn-default">Adapting to a changing environment</a></li>
 
                 </ul>
-                <h3>Program element:
+                <div class="mrgn-tp-md"><a href="#cn-filters-more" id="lnk-more-search-options">View additional search options</a></div>
+                <div id="cn-filters-more">
 
-                    <p class="more-info"><a href="#">Learn more about our program elements <i class="fas fa-arrow-alt-circle-right mrgn-all-xs"></i></a></p>
-                </h3>
-                <ul>
-                    <li><a href="#" id="pe-competitive" class="btn btn-default">Competitive projects</a></li>
-                    <li><a href="#" id="pe-sandbox" class="btn btn-default">Sandboxes</a></li>
-                    <li><a href="#" id="pe-contests" class="btn btn-default">Contests</a></li>
-                    <li><a href="#" id="pe-testdrive" class="btn btn-default">Test drives</a></li>
-                    <li><a href="#" id="pe-networks" class="btn btn-default">Innovation networks </a></li>
-                </ul>
-                <h3>Challenge originator:</h3>
-                <ul>
-                    <li><a href="#" id="co-army" class="btn btn-default">Army</a></li>
-                    <li><a href="#" id="co-navy" class="btn btn-default">Navy</a></li>
-                    <li><a href="#" id="co-airforce" class="btn btn-default">Air Force</a></li>
-                </ul>
+                    <h3>Program element:
+
+                        <span class="more-info"><a href="#">Learn more about our program elements <i class="fas fa-arrow-alt-circle-right mrgn-all-xs"></i></a></span>
+                    </h3>
+                    <ul>
+                        <li><a href="#" id="pe-competitive" class="btn btn-default">Competitive projects</a></li>
+                        <li><a href="#" id="pe-sandbox" class="btn btn-default">Sandboxes</a></li>
+                        <li><a href="#" id="pe-contests" class="btn btn-default">Contests</a></li>
+                        <li><a href="#" id="pe-testdrive" class="btn btn-default">Test drives</a></li>
+                        <li><a href="#" id="pe-networks" class="btn btn-default">Innovation networks </a></li>
+                    </ul>
+                    <h3>Challenge originator:</h3>
+                    <ul>
+                        <li><a href="#" id="co-army" class="btn btn-default">Army</a></li>
+                        <li><a href="#" id="co-navy" class="btn btn-default">Navy</a></li>
+                        <li><a href="#" id="co-airforce" class="btn btn-default">Air Force</a></li>
+                    </ul>
+                </div>
 
             </div>
 
             <h2 class="wb-inv">Our innovation challenges</h2>
-            <div id="challenges">
+            <div id="cn-challenges">
                 <div class="row">
 
                     <div class="col-md-4 co-army">
@@ -155,7 +159,7 @@
                             <img class="badge-element pstn-tp-xs pstn-rght-xs" src="/theme-dnd-intranet/assets/pe-sandbox.png" alt="Sandbox" />
                             <div class="caption">
 
-                                <h3 id="thumbnail-label"><a href="#">Scrubbing your scrubs</a></h3>
+                                <h3 class="thumbnail-label"><a href="#">Scrubbing your scrubs</a></h3>
 
 
 
@@ -170,7 +174,7 @@
                             <img class="badge-element pstn-tp-xs pstn-rght-xs" src="/theme-dnd-intranet/assets/pe-sandbox.png" alt="Competitive project" />
                             <div class="caption">
 
-                                <h3 id="thumbnail-label"><a href="#">Rapid response</a></h3>
+                                <h3 class="thumbnail-label"><a href="#">Rapid response</a></h3>
 
 
 
@@ -186,7 +190,7 @@
                             <img class="badge-element pstn-tp-xs pstn-rght-xs" src="/theme-dnd-intranet/assets/pe-sandbox.png" alt="Competitive project" />
                             <div class="caption">
 
-                                <h3 id="thumbnail-label"><a href="#">Super sanitize</a></h3>
+                                <h3 class="thumbnail-label"><a href="#">Super sanitize</a></h3>
 
 
 
@@ -201,7 +205,7 @@
                             <img class="badge-element pstn-tp-xs pstn-rght-xs" src="/theme-dnd-intranet/assets/pe-sandbox.png" alt="Competitive project" />
                             <div class="caption">
 
-                                <h3 id="thumbnail-label"><a href="#">Understanding and addressing post-traumatic stress disorder (PTSD)</a></h3>
+                                <h3 class="thumbnail-label"><a href="#">Understanding and addressing post-traumatic stress disorder (PTSD)</a></h3>
 
 
 
@@ -216,7 +220,7 @@
                             <img class="badge-element pstn-tp-xs pstn-rght-xs" src="/theme-dnd-intranet/assets/pe-sandbox.png" alt="Competitive project" />
                             <div class="caption">
 
-                                <h3 id="thumbnail-label"><a href="#">Moral trauma on the frontlines. See, prevent, and treat </a></h3>
+                                <h3 class="thumbnail-label"><a href="#">Moral trauma on the frontlines. See, prevent, and treat </a></h3>
 
                                 <div class="thumbnail-description smaller">Novel tools and methods to assess, address and treat PTSD</div>
                             </div>
@@ -231,7 +235,7 @@
                             <img class="badge-element pstn-tp-xs pstn-rght-xs" src="/theme-dnd-intranet/assets/pe-sandbox.png" alt="Competitive project" />
                             <div class="caption">
 
-                                <h3 id="thumbnail-label"><a href="#">Chemical, biological and radiological (CBR) hazard detection and planning</a></h3>
+                                <h3 class="thumbnail-label"><a href="#">Chemical, biological and radiological (CBR) hazard detection and planning</a></h3>
 
                                 <div class="thumbnail-description smaller">Rapid detection, early warning, and effective monitoring of CBR releases. </div>
                             </div>
@@ -248,7 +252,7 @@
                             <img class="badge-element pstn-tp-xs pstn-rght-xs" src="/theme-dnd-intranet/assets/pe-sandbox.png" alt="Competitive project" />
                             <div class="caption">
 
-                                <h3 id="thumbnail-label"><a href="#">Corrosion detection in ships</a></h3>
+                                <h3 class="thumbnail-label"><a href="#">Corrosion detection in ships</a></h3>
 
                                 <div class="thumbnail-description smaller">Innovative methods to detect corrosion in ships</div>
 
@@ -262,7 +266,7 @@
                             <img class="badge-element pstn-tp-xs pstn-rght-xs" src="/theme-dnd-intranet/assets/pe-sandbox.png" alt="Competitive project" />
                             <div class="caption">
 
-                                <h3 id="thumbnail-label"><a href="#">Pop up city</a></h3>
+                                <h3 class="thumbnail-label"><a href="#">Pop up city</a></h3>
 
                                 <div class="thumbnail-description smaller">Integrated energy, water, and waste management systems for deployed camps</div>
                             </div>
@@ -275,6 +279,15 @@
                 </div>
             </div>
 
+            <div id="cn-search-results-empty">
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr>
+                        <h3 class="mrgn-tp-sm">No challenges found!</h3>
+                        <p>Sorry, but we couldn't find any challenges that match the filters selected. Try a different combination! </p>
+                    </div>
+                </div>
+            </div>
 
             <div class="pagedetails container">
 
@@ -323,29 +336,40 @@
     <script type="text/javascript">
         $(document).on("wb-ready.wb", function(event) {
 
-            var $grid = $('#challenges').isotope({
+            /* Hide the initial set of search options and display them as needed*/
+            $("#cn-filters-more, #cn-search-results-empty").hide();
+            $("#lnk-more-search-options").on("click", function(e) {
+                e.preventDefault();
+                $(this).remove();
+                $("#cn-filters-more").fadeIn(100);
+            });
+
+            /* Setup the challenges filter */
+            var $grid = $('#cn-challenges').isotope({
                 // options
                 itemSelector: '.col-md-4',
                 layoutMode: 'fitRows'
             });
 
-            $("#co-army").on("click", function() {
+            $("#cn-filters li a").on("click", function() {
+                var filterName = "." + $(this).attr("id");
+                $(this).toggleClass("btn-on");
                 $grid.isotope({
-                    filter: '.co-army'
+                    filter: filterName
                 });
             });
 
-            $("#co-navy").on("click", function() {
-                $grid.isotope({
-                    filter: '.co-navy'
-                });
+            $grid.on('arrangeComplete', function() {
+                console.log("grid rearranged");
+                /* Display a default message when no challenges match */
+                if ($('#cn-challenges').find("[class^='col-']:visible").length == 0) {
+                    $("#cn-search-results-empty").fadeIn(300);
+                } else {
+                    console.log("hmmm...");
+                    $("#cn-search-results-empty").fadeOut(300);
+                }
             });
 
-            $("#co-airforce").on("click", function() {
-                $grid.isotope({
-                    filter: '.co-airforce'
-                });
-            });
         });
     </script>
 </body>

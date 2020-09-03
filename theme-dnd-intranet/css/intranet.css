@@ -264,12 +264,13 @@ h6 {
 
 .h1,
 h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 58px;
-    border-bottom: none;
+    font-family: 'Lato', Georgia, 'Times New Roman', Times, serif;
+    font-size: 52px;
+    border-bottom: 1px solid #ccc;
     letter-spacing: -1px;
     font-weight: 400;
-    margin: 32px 0 0
+    margin: 32px 0 20px 0;
+    padding: 0 0 0;
 }
 
 .h2,
@@ -279,7 +280,7 @@ h2,
 main .h2,
 main h2 {
     font-size: 28px;
-    letter-spacing: -.5px
+    letter-spacing: -.5px border-bottom: none;
 }
 
 .h3,
@@ -642,6 +643,10 @@ ul li.ui-menu-item .ui-menu-item-wrapper {
     font-size: 10px
 }
 
+.panel-program-element header {
+    min-height: 50px;
+}
+
 .overlay-def .modal-header {
     color: #fff;
     background: #2f3437
@@ -982,6 +987,11 @@ button#search-button {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
 }
 
+.thumbnail:hover img {
+    cursor: none;
+    box-shadow: none;
+}
+
 .wb-tabs [role=tablist] {
     margin-left: 25px
 }
@@ -1055,7 +1065,7 @@ button#search-button {
 }
 
 #wb-info .brand {
-    background: url(../../assets/svg-leaf.svg) 50px -205px no-repeat #393858;
+    background-color: #393858;
     background-size: 150%;
     border-top: 1px solid #434458
 }
@@ -1208,13 +1218,6 @@ main a.article-link {
 .panel-footer {
     background: #fff;
     font-size: 18px;
-    border-top: 1px solid #d5e2e9
-}
-
-.panel-footer:focus,
-.panel-footer:hover {
-    background: #434458;
-    color: #fff;
     border-top: 1px solid #d5e2e9
 }
 
@@ -1606,6 +1609,7 @@ summary > .btn-default:visited {
     border: 3px solid #d5e2e9
 }
 
+.btn-on,
 .btn-default:active,
 .btn-default:focus,
 .btn-default:hover,
@@ -2104,9 +2108,9 @@ summary.btn-danger:hover {
 }
 
 .panel-default .panel-heading {
-    background-color: #d5e2e9;
-    border-color: #d5e2e9;
-    color: #2f3437
+    background-color: #9F9EAE;
+    border-color: #9F9EAE;
+    color: #2f3437;
 }
 
 .panel-heading .panel-title {
@@ -2137,6 +2141,13 @@ summary.btn-danger:hover {
 .panel.panel-dark-grey a:visited:hover {
     color: #fff;
     text-decoration: underline
+}
+
+.panel-program-element {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 main .list-group-item {
@@ -2362,11 +2373,11 @@ a > img.social-icon:hover {
     max-width: 100% !important
 }
 
-#filters {
+#cn-filters {
     margin-bottom: 40px;
 }
 
-#filters ul {
+#cn-filters ul {
     list-style: none;
     display: inline;
     margin: 0px;
@@ -2374,7 +2385,7 @@ a > img.social-icon:hover {
 
 }
 
-#filters ul li {
+#cn-filters ul li {
     display: inline-block;
     margin-right: 10px;
     margin-top: 20px;
