@@ -12,14 +12,14 @@
     border: 1px solid #ddd; 
     margin-bottom: 12px; 
   }
-  #IDEaSSection {
+  td.IDEaSSection {
     background-color: white;
   }
-  #IDEaSContact {
+  td.IDEaSContact {
     background-color: #f6f6f6;
     padding: 10px;
   }
-  #IDEaSPhoto {
+  img.IDEaSPhoto {
     float:right; 
     margin: 0px 10px 0px 0px;
   }
