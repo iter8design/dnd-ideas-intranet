@@ -488,7 +488,7 @@ span.label.label-danger {
 }
 
 label {
-	font-weight: normal;	
+    font-weight: normal;
 }
 
 figcaption {
@@ -599,7 +599,7 @@ ul li.ui-menu-item .ui-menu-item-wrapper {
 }
 
 .well {
-    background-color: #dbe6eb;
+    background-color: #eeeeee;
     border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none
@@ -1484,15 +1484,16 @@ table tr.bg-primary th {
 }
 
 .cntct-crd {
-	background-color: #ffffff;
-	border-radius: 10px;
-	padding: 20px;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     transition: 0.3s;
-	font-size: 15px;
+    font-size: 15px;
 }
+
 .cntct-crd h4 {
-	margin-top: 0px;	
+    margin-top: 0px;
 }
 
 .img-circle-crop {
@@ -1546,7 +1547,7 @@ input[type=submit].input-lg {
 }
 
 .input-group-addon {
-	font-size: 15px;	
+    font-size: 15px;
 }
 
 
@@ -2233,6 +2234,27 @@ a > img.social-icon:hover {
 
 #custom-margin {
     margin: 0 30px
+}
+
+#lst-news {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#lst-news li {
+    padding: 10px;
+}
+
+
+#lst-news li:nth-child(even) {
+    background: #eeeeee;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+}
+
+#lst-news date {
+    font-weight: 800;
 }
 
 @media only screen and (max-width:1024px) {}
