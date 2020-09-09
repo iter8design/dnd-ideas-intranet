@@ -2258,7 +2258,7 @@ a > img.social-icon:hover {
     border-top: 1px solid #dddddd;
 }
 
-#lst-news date {
+#lst-news datetime {
     font-weight: 800;
 }
 
