@@ -487,6 +487,10 @@ span.label.label-danger {
     cursor: pointer
 }
 
+label {
+	font-weight: normal;	
+}
+
 figcaption {
     background-color: #f4f7f9;
     padding: 9px 18px
@@ -936,13 +940,6 @@ ul li.ui-menu-item .ui-menu-item-wrapper:last-child:hover {
     background: #2e2e40;
     border-left: #2e2e40;
     border-bottom: #2e2e40
-}
-
-.form-control {
-    border: none !important;
-    border-bottom: 1px solid #c1c5cb !important;
-    box-shadow: none !important;
-    border-radius: 0
 }
 
 #search-wrapper {
@@ -1486,6 +1483,26 @@ table tr.bg-primary th {
     border-radius: 0
 }
 
+.cntct-crd {
+	background-color: #ffffff;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+	font-size: 15px;
+}
+.cntct-crd h4 {
+	margin-top: 0px;	
+}
+
+.img-circle-crop {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
 details summary.summary-dark-grey {
     background: #2f3437;
     color: #fff;
@@ -1527,6 +1544,11 @@ input[type=submit].btn-lg,
 input[type=submit].input-lg {
     height: inherit
 }
+
+.input-group-addon {
+	font-size: 15px;	
+}
+
 
 .force-style-gcweb-4-0-29 .btn-group-lg > .btn,
 .force-style-gcweb-4-0-29 .btn.btn-lg,
