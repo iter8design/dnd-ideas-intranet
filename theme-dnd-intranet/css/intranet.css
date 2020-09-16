@@ -2262,6 +2262,24 @@ a > img.social-icon:hover {
     font-weight: 800;
 }
 
+#chlng-header #program-element {
+    min-height: 30px;
+    min-width: 50px;
+    background-color: #eeeeee;
+    padding: 15px;
+    border-bottom-left-radius: 30px;
+}
+
+#chlng-header h1 {
+    vertical-align: bottom;
+    font-size: 26px;
+    border: none;
+}
+
+#chlng-header p.lead {
+    font-size: 18px;
+}
+
 @media only screen and (max-width:1024px) {}
 
 @media only screen and (max-width:425px) {
