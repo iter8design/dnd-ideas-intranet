@@ -497,10 +497,36 @@ figcaption {
 }
 
 blockquote {
-    padding: 11.5px 23px;
-    margin: 0 0 23px;
-    border-left: 5px solid #1ca56f
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+
+    background-color: #f9f9f9;
+    border-left: 10px solid #393858;
+
+    /* quotes: "\201C""\201D""\2018""\2019"; */
 }
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 6em;
+    line-height: 0.1em;
+    vertical-align: -0.6em;
+    font-family: "Noto";
+}
+
+blockquote:after {
+    color: #ccc;
+    content: close-quote;
+    font-size: 6em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.6em;
+    font-family: "Noto";
+    float: right;
+}
+
+
 
 .share-button {
     font-size: 16px;
@@ -648,7 +674,16 @@ ul li.ui-menu-item .ui-menu-item-wrapper {
 }
 
 .panel-program-element header {
-    min-height: 50px;
+    min-height: 60px;
+}
+
+.panel-program-element .panel-footer {
+    margin-bottom: 23px;
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: 16px;
+    right: 16px;
 }
 
 .overlay-def .modal-header {
