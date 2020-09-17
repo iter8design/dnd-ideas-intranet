@@ -1070,7 +1070,7 @@ button#search-button {
     background-color: #393858;
     background-size: 150%;
     border-top: 1px solid #434458;
-	
+
 }
 
 #wb-info .brand li a {
@@ -1219,9 +1219,10 @@ main a.article-link {
 }
 
 .panel-footer {
-    background: #fff;
+    background: #9F9EAE;
     font-size: 18px;
-    border-top: 1px solid #d5e2e9
+    border-top: 1px solid #d5e2e9;
+    min-height: 30px;
 }
 
 .article-panel {
@@ -2143,10 +2144,10 @@ summary.btn-danger:hover {
 }
 
 .panel-heading .panel-title {
-    font-family: Barlow, sans-serif;
-    font-size: 14px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
     text-transform: uppercase;
-    letter-spacing: .25em
+    letter-spacing: .1em
 }
 
 .panel.panel-dark-grey {
@@ -2669,15 +2670,12 @@ a[href="javascript:Void(0);"]:hover {
 }*/
 
 /*:::::::::::::innovation-challenges.html badges:::::::::::::*/
-.badge-element {   
-  margin-right: 20px !important;
-  padding-top: 5px;
+.badge-element {
+    margin-right: 20px !important;
+    padding-top: 5px;
 }
 
 .thumbnail-label {
     font-size: 20px;
     padding-top: 7px;
 }
-
-
-
