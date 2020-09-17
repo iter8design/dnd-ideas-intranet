@@ -1069,7 +1069,8 @@ button#search-button {
 #wb-info .brand {
     background-color: #393858;
     background-size: 150%;
-    border-top: 1px solid #434458
+    border-top: 1px solid #434458;
+	
 }
 
 #wb-info .brand li a {
@@ -2646,8 +2647,32 @@ a[href="javascript:Void(0);"]:hover {
 }
 
 
-/*:::::::::::::Andrew's custom code:::::::::::::*/
+/*:::::::::::::::::::::::::::::::::::::Andrew's custom code:::::::::::::::::::::::::::::::::::::*/
 
+
+/*:::::::::::::Digital camo header and footer graphics:::::::::::::*/
+
+/*:::::::::::::header:::::::::::::
+.bg-purple {
+  background-image:url("../assets/IDEaS_digi_camo_Header_footer.jpg"); 
+  width: 100%;
+  height: auto;
+}*/
+
+/*:::::::::::::footer:::::::::::::
+#wb-info .brand {
+  background-image:url("../assets/IDEaS_digi_camo_Header_footer.jpg"); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}*/
+
+/*:::::::::::::innovation-challenges.html badges:::::::::::::*/
+.badge-element {   
+  margin-right: 20px !important;
+  padding-top: 5px;
+}
 
 
 
