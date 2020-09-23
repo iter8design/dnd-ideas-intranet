@@ -493,7 +493,7 @@ label {
 
 figcaption {
     background-color: #f4f7f9;
-    padding: 9px 18px
+    padding-top: 9px;
 }
 
 blockquote {
@@ -1588,8 +1588,12 @@ input[type=submit].input-lg {
     height: inherit
 }
 
-.input-group-addon {
+.input-group-btn {
     font-size: 15px;
+}
+
+#sch-inp-ac {
+    min-height: 41px;
 }
 
 
