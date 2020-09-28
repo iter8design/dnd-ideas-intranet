@@ -1532,6 +1532,7 @@ table tr.bg-primary th {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     transition: 0.3s;
     font-size: 15px;
+    margin-top: 20px;
 }
 
 .cntct-crd h4 {
