@@ -1008,6 +1008,8 @@ button#search-button {
     min-width: 40%;
     border-radius: 5px;
     background-color: #ffffff;
+    border-left: 5px solid #393858;
+    margin-top: 10px;
 }
 
 .thumbnail-description {
@@ -1593,19 +1595,13 @@ input[type=submit].input-lg {
     font-size: 15px;
 }
 
-#sch-inp-ac {
+.input-group .form-control {
     min-height: 41px;
 }
 
-
-.force-style-gcweb-4-0-29 .btn-group-lg > .btn,
-.force-style-gcweb-4-0-29 .btn.btn-lg,
-form .btn-group-lg > .btn,
-form .btn.btn-lg {
-    font-size: 18px;
-    padding: 16px 36px;
-    line-height: inherit;
-    border-radius: 0
+#sch-inp-ac,
+#sch-inp-cntc {
+    min-height: 41px;
 }
 
 .btn-sm,
@@ -1679,7 +1675,10 @@ summary > .btn-default:visited {
     border: 3px solid #d5e2e9
 }
 
-.btn-on,
+.btn-on:active,
+.btn-on:focus,
+.btn-on:hover,
+.btn-on:visited,
 .btn-default:active,
 .btn-default:focus,
 .btn-default:hover,
@@ -2712,7 +2711,7 @@ a[href="javascript:Void(0);"]:hover {
 /*:::::::::::::innovation-challenges.html badges:::::::::::::*/
 .badge-element {
     margin-right: 20px !important;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 .thumbnail-label {

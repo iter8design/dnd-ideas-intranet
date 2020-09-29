@@ -125,50 +125,71 @@
             <h1>Innovation challenges</h1>
             <p>{Introduction - Donec condimentum non urna varius aliquet. Nullam quis vestibulum purus. Vestibulum a sapien rutrum, tristique lectus et, congue nisl. Donec a interdum dui. Praesent vel ipsum sagittis, placerat massa a, viverra augue. Integer fringilla quam at turpis eleifend, vel dignissim odio molestie.</p>
 
-            <h2 class="wb-inv">Filter by</h2>
+            <p>
+                <label for="sch-inp-ac" class="wb-inv">Enter the name of the challenge to filter the list:</label>
+            </p>
+            <div class="input-group">
+                <input type="text" id="sch-inp-ac" placeholder="Search innovation challenges..." class="form-control full-width" size="35">
+                <span class="input-group-addon"><i class="fas fa-search"></i></span> </div>
+
+
+            <div class="mrgn-tp-md"><a href="#cn-filters-more" id="lnk-more-search-options" class="btn btn-link "><i class="fa fa-search-plus mrgn-rght-sm"></i>Additional search options</a></div>
             <div id="cn-filters">
+                <h2 class="wb-inv">Filter by</h2>
                 <h3>Theme:
                     <span class="more-info"><a href="themes.html">Learn more about our themes <i class="fas fa-arrow-alt-circle-right mrgn-all-xs"></i></a></span>
                 </h3>
 
-                <ul>
-                    <li><a href="#" id="theme-covid" class="btn btn-default">COVID-19, pandemic response & public health</a></li>
-                    <li><a href="#" id="theme-people" class="btn btn-default">People and enhanced human performance</a></li>
-                    <li><a href="#" id="theme-threat" class="btn btn-default">Threat anticipation</a></li>
-                    <li><a href="#" id="theme-environment" class="btn btn-default">Adapting to a changing environment</a></li>
+                <ul id="filters-theme">
+                    <li><a href="#" id=".theme-covid" class="btn btn-default">COVID-19, pandemic response & public health</a></li>
+                    <li><a href="#" id=".theme-people" class="btn btn-default">People and enhanced human performance</a></li>
+                    <li><a href="#" id=".theme-threat" class="btn btn-default">Threat anticipation</a></li>
+                    <li><a href="#" id=".theme-environment" class="btn btn-default">Adapting to a changing environment</a></li>
 
                 </ul>
-                <div class="mrgn-tp-md"><a href="#cn-filters-more" id="lnk-more-search-options">View additional search options</a></div>
-                <div id="cn-filters-more">
 
-                    <h3>Program element:
 
-                        <span class="more-info"><a href="#">Learn more about our program elements <i class="fas fa-arrow-alt-circle-right mrgn-all-xs"></i></a></span>
-                    </h3>
-                    <ul>
-                        <li><a href="#" id="pe-competitive" class="btn btn-default">Competitive projects</a></li>
-                        <li><a href="#" id="pe-sandbox" class="btn btn-default">Sandboxes</a></li>
-                        <li><a href="#" id="pe-contests" class="btn btn-default">Contests</a></li>
-                        <li><a href="#" id="pe-testdrive" class="btn btn-default">Test drives</a></li>
-                        <li><a href="#" id="pe-networks" class="btn btn-default">Innovation networks </a></li>
-                    </ul>
-                    <h3>Challenge originator:</h3>
-                    <ul>
-                        <li><a href="#" id="co-army" class="btn btn-default">Army</a></li>
-                        <li><a href="#" id="co-navy" class="btn btn-default">Navy</a></li>
-                        <li><a href="#" id="co-airforce" class="btn btn-default">Air Force</a></li>
-                    </ul>
-                </div>
+                <h3>Program element:
+
+                    <span class="more-info"><a href="program/program-overview.html">Learn more about our program elements <i class="fas fa-arrow-alt-circle-right mrgn-all-xs"></i></a></span>
+                </h3>
+                <ul id="filters-program">
+                    <li><a href="#" id=".pe-competitive" class="btn btn-default">Competitive projects</a></li>
+                    <li><a href="#" id=".pe-sandbox" class="btn btn-default">Sandboxes</a></li>
+                    <li><a href="#" id=".pe-contest" class="btn btn-default">Contests</a></li>
+                    <li><a href="#" id=".pe-testdrive" class="btn btn-default">Test drives</a></li>
+                    <li><a href="#" id=".pe-network" class="btn btn-default">Innovation networks </a></li>
+                </ul>
+                <h3>Challenge originator:</h3>
+                <label for="challenge-originator" class="wb-inv">Select a challenge originator to filter the list of challenges:</label>
+                <select id="challenge-originator" class="form-control">
+                    <option value="*">All challenge originators</option>
+                    <option value=".co-adm-ie">ADM - IE</option>
+                    <option value=".co-adm-im">ADM - Information Management</option>
+                    <option value=".co-adm-mat">ADM - MAT</option>
+                    <option value=".co-adm-st">ADM - Science and technology</option>
+                    <option value=".co-army">Canadian Army</option>
+                    <option value=".co-cansofcom">CANSOFCOM</option>
+                    <option value=".co-cfintcom">CFINTCOM</option>
+                    <option value=".co-dg-cyber">Director General - Cyber</option>
+                    <option value=".co-dg-space">Director General - Space</option>
+
+                    <option value=".co-mpc">Military Personnel Command</option>
+                    <option value=".co-rcaf">Royal Canadian Air Force</option>
+                    <option value=".co-navy">Royal Canadian Navy</option>
+                    <option value=".co-norad">NORAD</option>
+                    <option value=".co-sjs">SJS</option>
+                </select>
 
             </div>
-
+            <hr>
             <h2 class="wb-inv">Our innovation challenges</h2>
             <div id="cn-challenges">
                 <div class="row">
 
-                    <div class="col-md-4 co-army">
+                    <div class="col-md-4 co-army pe-competitive">
                         <div class="thumbnail">
-                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Sandbox" />
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
                             <div class="caption">
 
                                 <h3 class="thumbnail-label"><a href="#">Scrubbing your scrubs</a></h3>
@@ -181,9 +202,9 @@
                         </div>
 
                     </div>
-                    <div class="col-md-4 co-army">
+                    <div class="col-md-4 co-army pe-competitive">
                         <div class="thumbnail">
-                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/contests.png" ../theme-dnd-intranet/assets/pe-sandbox.png"" alt="Competitive project" />
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
                             <div class="caption">
 
                                 <h3 class="thumbnail-label"><a href="#">Rapid response</a></h3>
@@ -197,24 +218,182 @@
 
 
                     </div>
-                    <div class="col-md-4 co-navy">
+
+                    <div class="col-md-4 co-mpc pe-competitive">
                         <div class="thumbnail">
-                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/inn-net.png" alt="Competitive project" />
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
                             <div class="caption">
-
-                                <h3 class="thumbnail-label"><a href="#">Super sanitize</a></h3>
-
-
-
-                                <div class="thumbnail-description smaller">Cleaning sensitive equipment and workspaces</div>
+                                <h3 class="thumbnail-label"><a href="#">Recruit, retain, and reach 25% representation of women by 2026</a></h3>
                             </div>
-
                         </div>
-
                     </div>
-                    <div class="col-md-4 co-army">
+
+                    <div class="col-md-4 co-mpc pe-competitive">
                         <div class="thumbnail">
-                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/sandbox.png" alt="Competitive project" />
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Predicting and optimizing personnel performance</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-mpc pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Human performance in extreme climatic environments</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-mpc pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Alternative recruitment models</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-mpc pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Beyond the Classroom: Innovative language learning and retention</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-army pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Cognitive performance enhancement</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-army pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Detection and classification of objects of interest</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 co-army pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Lightweight ballistic protection</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-army pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Collaboration of robotic systems</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-army pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Resilient non-global positioning system based positioning, navigation and timing</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-army pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Armour up! Modular lightweight armour for land vehicles </a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-army pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Essential deliveries: Getting vital supplies to troops using autonomous vehicles</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-navy pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Better than meets the eye</a></h3>
+
+                                <div class="thumbnail-description smaller">Reliable object detection amongst the waves</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-navy pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Knot vulnerable</a></h3>
+
+                                <div class="thumbnail-description smaller">Locking down cybersecurity on naval vessels </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-navy pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Persistent maritime surveillance</a></h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-navy pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">It’s not just noise: </a></h3>
+                                <div class="thumbnail-description smaller">Innovative tools for acoustic sensor operations</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-norad pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Proactive deterrence</a></h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-norad pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Full spectrum communications in the Arctic </a></h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-mpc pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
                             <div class="caption">
 
                                 <h3 class="thumbnail-label"><a href="#">Understanding and addressing post-traumatic stress disorder (PTSD)</a></h3>
@@ -227,24 +406,57 @@
                         </div>
 
                     </div>
-                    <div class="col-md-4 co-airforce co-navy">
+                    <div class="col-md-4 pe-competitive">
                         <div class="thumbnail">
                             <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
                             <div class="caption">
 
-                                <h3 class="thumbnail-label"><a href="#">Moral trauma on the frontlines. See, prevent, and treat </a></h3>
+                                <h3 class="thumbnail-label"><a href="#">Moral injury</a></h3>
 
-                                <div class="thumbnail-description smaller">Novel tools and methods to assess, address and treat PTSD</div>
+
                             </div>
 
                         </div>
 
 
                     </div>
-                    <div class="col-md-4 co-airforce">
+
+                    <div class="col-md-4 co-mpc pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+
+                                <h3 class="thumbnail-label"><a href="#">Navigating your next chapter</a></h3>
+
+                                <div class="thumbnail-description smaller">The transition back to civilian life </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-4 co-rcaf pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+
+                                <h3 class="thumbnail-label"><a href="#">Making data make sense</a></h3>
+
+                                <div class="thumbnail-description smaller">Real-time data analysis for rapid decision making</div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-4 co-army pe-competitive">
 
                         <div class="thumbnail">
-                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/contests.png" alt="Competitive project" />
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
                             <div class="caption">
 
                                 <h3 class="thumbnail-label"><a href="challenges/challenge-sample-cbr.html">Chemical, biological and radiological (CBR) hazard detection and planning</a></h3>
@@ -256,12 +468,277 @@
 
                     </div>
 
-
-
-                    <div class="col-md-4 co-airforce">
+                    <div class="col-md-4 co-sjs pe-competitive">
 
                         <div class="thumbnail">
-                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/inn-net.png" alt="Competitive project" />
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+
+                                <h3 class="thumbnail-label"><a href="#">Spring into action – </a></h3>
+                                <div class="thumbnail-description smaller">Fast and adaptive logistics planning for military missions</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 co-adm-st pe-competitive">
+
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+
+                                <h3 class="thumbnail-label"><a href="#">Quantum leap</a></h3>
+                                <div class="thumbnail-description smaller">Shrinking sensing technologies for field operations</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 co-rcaf pe-competitive">
+
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+
+                                <h3 class="thumbnail-label"><a href="#">Spot the hack</a></h3>
+                                <div class="thumbnail-description smaller">Intrusion detection systems for avionics networks and bus technologies</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 co-adm-mat pe-competitive">
+
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+
+                                <h3 class="thumbnail-label"><a href="#">All systems go!</a></h3>
+                                <div class="thumbnail-description smaller">Predicting and optimizing maintenance for military platforms</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 co-adm-it pe-competitive">
+
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+
+                                <h3 class="thumbnail-label"><a href="#">Remaining vigilant</a></h3>
+                                <div class="thumbnail-description smaller">Identifying cyber dependencies, vulnerabilities and threats </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="thumbnail pe-competitive">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+
+                                <h3 class="thumbnail-label"><a href="#">Keeping cell phones secure on untrusted networks</a></h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 co-adm-ie pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">A cold wind blows</a></h3>
+                                <div class="thumbnail-description smaller">Seeking smaller, ruggedized wind turbines for the Arctic</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-cfintcom pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Staying four steps ahead</a></h3>
+                                <div class="thumbnail-description smaller">Understanding and predicting the behaviour of adversaries</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-ca pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Casting a wide net</a></h3>
+                                <div class="thumbnail-description smaller">Creating secure mobile networks while on the move</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-rcaf pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Shields up?</a></h3>
+                                <div class="thumbnail-description smaller">Defend and protect satellites from natural and artificial threats</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-ca pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Power up!</a></h3>
+                                <div class="thumbnail-description smaller">Portable power for soldiers on the move</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-ca pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Now you see me, now you don’t</a></h3>
+                                <div class="thumbnail-description smaller">Reducing visual and infrared detection of soldiers and their vehicles</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-rcaf pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Collision course</a></h3>
+                                <div class="thumbnail-description smaller">Tracking and de-orbiting space debris </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-rcaf pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Breaking the ice</a></h3>
+                                <div class="thumbnail-description smaller">Ground solutions for removing frozen contaminants from aircraft</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-adm-im pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Detecting and responding to hostile information activities </a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 co-adm-im pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Understanding cyber intent </a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-rcn pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Persistent maritime surface sensor system </a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-adm-im pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Verification of full motion video integrity </a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-mpc pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">An integrated human resources data management solution</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Respiratory protection for DND/CAF members with facial hair</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-ca pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Detection of concealed explosives </a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-adm-im co-dg-cyber pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Cyber attribution for the defence of Canada</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-cfintcom pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Making sense of the chatter</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-cfintcom pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">What is in full motion video?</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 co-rcaf co-dg-space pe-competitive">
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/comp-proj.png" alt="Competitive project" />
+                            <div class="caption">
+                                <h3 class="thumbnail-label"><a href="#">Identification and characterization of space objects</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-md-4 co-adm-mat pe-sandbox">
+
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/sandbox.png" alt="Sandbox" />
                             <div class="caption">
 
                                 <h3 class="thumbnail-label"><a href="#">Corrosion detection in ships</a></h3>
@@ -272,15 +749,90 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 co-airforce">
+
+                    <div class="col-md-4 co-army pe-sandbox">
 
                         <div class="thumbnail">
-                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/contests.png" alt="Competitive project" />
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/sandbox.png" alt="Sandbox" />
+                            <div class="caption">
+
+                                <h3 class="thumbnail-label"><a href="#">Counter micro and mini unmanned aerial systems</a></h3>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 co-sof pe-sandbox">
+
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/sandbox.png" alt="Sandbox" />
+                            <div class="caption">
+
+                                <h3 class="thumbnail-label"><a href="#">Camouflage against Surveillance Technology for Dismounted Soldiers </a></h3>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 co-sof pe-sandbox">
+
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/sandbox.png" alt="Sandbox" />
+                            <div class="caption">
+
+                                <h3 class="thumbnail-label"><a href="#">Enhanced Small Arms Targeting Systems</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 co-army pe-sandbox">
+
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/sandbox.png" alt="Sandbox" />
+                            <div class="caption">
+
+                                <h3 class="thumbnail-label"><a href="#">Stand-Off Detection of Explosives </a></h3>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 pe-contest">
+
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/contests.png" alt="Contests" />
                             <div class="caption">
 
                                 <h3 class="thumbnail-label"><a href="#">Pop up city</a></h3>
 
                                 <div class="thumbnail-description smaller">Integrated energy, water, and waste management systems for deployed camps</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 pe-network">
+
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/inn-net.png" alt="Innovation networks" />
+                            <div class="caption">
+
+                                <h3 class="thumbnail-label"><a href="#">Advanced Materials </a></h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 pe-network">
+
+                        <div class="thumbnail">
+                            <img class="badge-element pstn-tp-xs pstn-rght-xs" src="../theme-dnd-intranet/assets/inn-net.png" alt="Innovation networks" />
+                            <div class="caption">
+
+                                <h3 class="thumbnail-label"><a href="#">Autonomous Systems </a></h3>
                             </div>
 
                         </div>
@@ -294,7 +846,6 @@
             <div id="cn-search-results-empty">
                 <div class="row">
                     <div class="col-md-12">
-                        <hr>
                         <h3 class="mrgn-tp-sm">No challenges found!</h3>
                         <p>Sorry, but we couldn't find any challenges that match the filters selected. Try a different combination! </p>
                     </div>
@@ -349,40 +900,87 @@
         $(document).on("wb-ready.wb", function(event) {
 
             /* Hide the initial set of search options and display them as needed*/
-            $("#cn-filters-more, #cn-search-results-empty").hide();
+            $("#cn-filters, #cn-search-results-empty").hide();
             $("#lnk-more-search-options").on("click", function(e) {
                 e.preventDefault();
                 $(this).remove();
-                $("#cn-filters-more").fadeIn(100);
+                $("#cn-filters").fadeIn(100);
             });
+
+            // quick search regex
+            var qsRegex;
+            var themeFilter;
+            var peFilter;
+            var originatorFilter;
 
             /* Setup the challenges filter */
             var $grid = $('#cn-challenges').isotope({
                 // options
                 itemSelector: '.col-md-4',
-                layoutMode: 'fitRows'
+                layoutMode: 'fitRows',
+                filter: function() {
+                    var $this = $(this);
+                    var searchResult = qsRegex ? $this.text().match(qsRegex) : true;
+                    var themeResult = themeFilter ? $this.is(themeFilter) : true;
+                    var peResult = peFilter ? $this.is(peFilter) : true;
+                    var originatorResult = originatorFilter ? $this.is(originatorFilter) : true;
+                    //var buttonResult = buttonFilter ? $this.is(buttonFilter) : true;
+                    return searchResult && themeResult && peResult && originatorResult;
+                }
             });
 
-            $("#cn-filters li a").on("click", function() {
-                var filterName = "." + $(this).attr("id");
+            var $quicksearch = $('#sch-inp-ac').keyup(debounce(function() {
+                qsRegex = new RegExp($quicksearch.val(), 'gi');
+                $grid.isotope();
+            }));
+
+            $("#filters-theme li a").on("click", function() {
+                themeFilter = $(this).attr("id");
                 $(this).toggleClass("btn-on");
-                $grid.isotope({
-                    filter: filterName
-                });
+                $(this).parent().siblings().children().removeClass("btn-on");
+                $grid.isotope();
+            });
+
+            $("#filters-program li a").on("click", function() {
+                peFilter = $(this).attr("id");
+                $(this).toggleClass("btn-on");
+                $(this).parent().siblings().children().removeClass("btn-on");
+                $grid.isotope();
+            });
+
+            $("#challenge-originator").on("change", function() {
+                originatorFilter = $(this).children("option:selected").val();
+                $grid.isotope();
             });
 
             $grid.on('arrangeComplete', function() {
-                console.log("grid rearranged");
                 /* Display a default message when no challenges match */
                 if ($('#cn-challenges').find("[class^='col-']:visible").length == 0) {
                     $("#cn-search-results-empty").fadeIn(300);
                 } else {
-                    console.log("hmmm...");
                     $("#cn-search-results-empty").fadeOut(300);
                 }
             });
 
+
+
         });
+
+        // Debounce so filtering doesn't happen every millisecond
+        function debounce(fn, threshold) {
+            var timeout;
+            threshold = threshold || 100;
+            return function debounced() {
+                clearTimeout(timeout);
+                var args = arguments;
+                var _this = this;
+
+                function delayed() {
+                    fn.apply(_this, args);
+                }
+                timeout = setTimeout(delayed, threshold);
+            };
+        }
     </script>
 </body>
 
