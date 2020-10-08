@@ -20,7 +20,9 @@
     <link rel="shortcut icon" href="../theme-dnd-intranet/assets/leaf-favicon.png" type="image/png">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css">
-    <link rel="preload" href="../theme-dnd-intranet/GCWeb/fonts/slick.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <!--<link rel="preload" href="../theme-dnd-intranet/GCWeb/fonts/slick.woff" as="font" type="font/woff" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../theme-dnd-intranet/js/dnd/slick/slick.css">
+    <link rel="stylesheet" href="../theme-dnd-intranet/js/dnd/slick/slick-theme.css">
     <!--<![endif]-->
     <!--[if lt IE 9]>
 		<link href="../theme-dnd-intranet/GCWeb/assets/favicon.ico" rel="shortcut icon" />
@@ -109,14 +111,24 @@
     </header>
     <main property="mainContentOfPage" class="" typeof="WebPageElement">
         <section class="container">
-            <div class="provisional bg-cover" data-bgimg="#">
-                <div class="container p-0 p-sm-12">
+            <div class="bg-cover" id="feature-carousel">
+                <div class="provisional container p-0 p-sm-12" data-bgimg="../theme-dnd-intranet/assets/bg_home.jpg">
                     <div class="well header-rwd brdr-0 brdr-rds-0 text-white bg-gctheme" id="bg-ideas-home">
                         <h1 property="name" id="wb-cont">Welcome to IDEaS</h1>
                         <p class="mrgn-tp-md">Innovation for Defence Excellence and Security</p>
                         <p>The IDEaS program has options for all innovators to connect, develop and evaluate their solutions.</p>
                     </div>
+
+
                 </div>
+                <div class="provisional container p-0 p-sm-12" data-bgimg="../theme-dnd-intranet/assets/bg_ptsd.jpg">
+                    <div class="well header-rwd brdr-0 brdr-rds-0">
+                        <h2 property="name">On the front lines of post-traumatic stress disorder (PTSD) treatment</h2>
+                        <p><a href="challenges/challenge-sample-mpc-ptsd.html">Read about some new research results from this challenge!</a></p>
+                        <p></p>
+                    </div>
+                </div>
+
 
             </div>
 
@@ -141,39 +153,48 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2>Featured challenges</h2>
-                    <p>These are some of the innovation challenges we're currently working on. Looking for a specific innovation challenge? <a href="innovation-challenges.html">View all our innovation challenges</a> and search by theme or by program element.</p>
+                    <p>These are some of the innovation challenges we're currently working on. Looking for a specific innovation challenge? <a href="innovation-challenges.html">View all our innovation challenges</a> and search by keyword, strategic focus area, or program element.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mrgn-bttm-md">
+
+
                     <a href="challenges/challenge-sample-navy-6.html">
-                        <figure>
-
-                            <img src="../theme-dnd-intranet/assets/challenges/featured/featured-navy-6.jpg" alt="" class="img-responsive thumbnail mrgn-bttm-sm">
-                            <figcaption>Knot vulnerable</figcaption>
-                            <p class="mrgn-tp-md">Locking down cybersecurity on naval vessels</p>
-                        </figure>
+                        <img src="../theme-dnd-intranet/assets/challenges/featured/featured-navy-6.jpg" alt="" class="img-responsive thumbnail mrgn-bttm-sm">
+                        <h3>Knot vulnerable</h3>
                     </a>
+                    <p class="mrgn-tp-md">Locking down cybersecurity on naval vessels</p>
+
+
                 </div>
                 <div class="col-lg-4 col-md-6 mrgn-bttm-md">
+
+
                     <a href="challenges/challenge-sample-army-61.html">
-                        <figure>
+                        <img src="../theme-dnd-intranet/assets/challenges/featured/featured-army-61.jpg" alt="" class="img-responsive thumbnail mrgn-bttm-sm">
 
-                            <img src="../theme-dnd-intranet/assets/challenges/featured/featured-army-61.jpg" alt="" class="img-responsive thumbnail mrgn-bttm-sm">
-                            <figcaption>Armour up</figcaption>
-                            <p class="mrgn-tp-md">Modular lightweight armour for land vehicles</p>
-                        </figure>
+                        <h3>Armour up</h3>
                     </a>
+                    <p class="mrgn-tp-md">Modular lightweight armour for land vehicles</p>
+
+
                 </div>
                 <div class="col-lg-4 col-md-6 mrgn-bttm-md">
-                    <a href="challenges/challenge-sample-mpc-9.html">
-                        <figure>
 
-                            <img src="../theme-dnd-intranet/assets/challenges/featured/featured-mpc-9.jpg" alt="" class="img-responsive thumbnail mrgn-bttm-sm">
-                            <figcaption>Navigating your next chapter</figcaption>
-                            <p class="mrgn-tp-md">The transition back to civilian</p>
-                        </figure>
+
+                    <a href="challenges/challenge-sample-mpc-9.html">
+                        <img src="../theme-dnd-intranet/assets/challenges/featured/featured-mpc-9.jpg" alt="" class="img-responsive thumbnail mrgn-bttm-sm">
+                        <h3>Navigating your next chapter</h3>
                     </a>
+                    <p class="mrgn-tp-md">The transition back to civilian</p>
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <a href="innovation-challenges.html" class="btn btn-primary center-block">View all our innovation challenges</a>
                 </div>
             </div>
 
@@ -187,7 +208,7 @@
 
             <dl id="wb-dtmd">
                 <dt>Date modified:&#32;</dt>
-                <dd><time property="dateModified">2020-09-16</time></dd>
+                <dd><time property="dateModified">2020-10-07</time></dd>
             </dl>
         </div>
     </main>
@@ -224,6 +245,18 @@
 		
 		<![endif]-->
     <script src="../theme-dnd-intranet/GCWeb/js/theme.min.js"></script>
+    <script src="../theme-dnd-intranet/js/dnd/slick/slick.min.js"></script>
+
+    <script>
+        $(document).on("wb-ready.wb", function(event) {
+            $("#feature-carousel").slick({
+                /* autoplay: true,
+                autoplaySpeed: 5000 */
+            });
+
+        });
+    </script>
+
 </body>
 
 </html>
