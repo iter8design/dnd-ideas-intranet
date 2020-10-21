@@ -1067,7 +1067,7 @@ button#search-button {
 }
 
 .wb-tabs [role=tablist] > li.active a {
-    border-bottom: .625em solid #1ca56f;
+    border-bottom: .625em solid #C25C28;
     border-top: none;
     background: 0 0;
     cursor: default;
